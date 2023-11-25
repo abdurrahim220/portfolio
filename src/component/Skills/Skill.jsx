@@ -16,6 +16,15 @@ import Postman from "../../assets/icons/postman-svgrepo-com.svg";
 import Vercel from "../../assets/icons/vercel-svgrepo-com.svg";
 import Netlify from "../../assets/icons/netlify-svgrepo-com.svg";
 import Linux from "../../assets/icons/linux-svgrepo-com.svg";
+import ChromeDev from "../../assets/icons/chrome-dev-svgrepo-com.svg";
+import Figma from "../../assets/icons/figma-svgrepo-com.svg";
+import NPM from "../../assets/icons/npm-svgrepo-com.svg";
+import VsCode from "../../assets/icons/vscode-svgrepo-com.svg";
+import Windows from "../../assets/icons/windows-applications-svgrepo-com.svg";
+import NextJs from "../../assets/icons/nextjs-svgrepo-com.svg";
+import Vite from "../../assets/icons/vitejs-svgrepo-com.svg";
+import ReactNative from "../../assets/icons/react-svgrepo-com.svg";
+// import NodeJs from "../../assets/icons";
 // import NodeJs from "../../assets/icons";
 
 const Skill = () => {
@@ -30,12 +39,11 @@ const Skill = () => {
   ];
 
   const framework = [
-    
-    { name: "ReactNative", value: 80, icons: "#fde047" },
+    { name: "ReactNative", value: 80, icons: ReactNative },
     { name: "ReactJs", value: 85, icons: React },
-    { name: "ViteJs", value: 80, icons: "#c248cD" },
+    { name: "ViteJs", value: 80, icons: Vite },
     { name: "ExpressJS", value: 85, icons: "#7c3aed" },
-    { name: "NextJs", value: 85, icons: "#c026d3" },
+    { name: "NextJs", value: 85, icons: NextJs },
     { name: "Redux", value: 85, icons: Redux },
   ];
 
@@ -46,18 +54,12 @@ const Skill = () => {
     { name: "Firebase", value: 85, icons: firebase },
     { name: "Netlify", value: 90, icons: Netlify },
     { name: "Vercel", value: 90, icons: Vercel },
-    { name: "VS Code", value: 90, icons: Vercel },
-    { name: "NPM", value: 90, icons: Vercel },
-    { name: "YARN", value: 90, icons: Vercel },
-    { name: "FIGMA", value: 90, icons: Vercel },
-    { name: "Chrome Dev Tools", value: 90, icons: Vercel },
-  ];
-  const operating = [
-   
+    { name: "VS Code", value: 90, icons: VsCode },
+    { name: "NPM", value: 90, icons: NPM },
+    { name: "FIGMA", value: 90, icons: Figma },
+    { name: "Chrome Dev Tools", value: 90, icons: ChromeDev },
     { name: "Linux", value: 85, icons: Linux },
-    { name: "Windows", value: 85, icons: Linux },
-    { name: "Mac OS", value: 85, icons: Linux },
-   
+    { name: "Windows", value: 85, icons: Windows },
   ];
 
   return (
@@ -83,9 +85,7 @@ const Skill = () => {
       </div>
 
       <div className="my-10">
-        <h1 className="text-center my-10 text-3xl font-semibold">
-          Framework
-        </h1>
+        <h1 className="text-center my-10 text-3xl font-semibold">Framework</h1>
 
         <Marquee pauseOnHover="true">
           <div className="flex justify-center items-center gap-5">
@@ -103,9 +103,7 @@ const Skill = () => {
       </div>
 
       <div className="my-10">
-        <h1 className="text-center my-10 text-3xl font-semibold">
-          Tools Kit
-        </h1>
+        <h1 className="text-center my-10 text-3xl font-semibold">Tools Kit</h1>
 
         <Marquee pauseOnHover="true">
           <div className="flex justify-center items-center gap-5">
@@ -121,26 +119,6 @@ const Skill = () => {
           </div>
         </Marquee>
       </div>
-      <div className="my-10">
-        <h1 className="text-center my-10 text-3xl font-semibold">
-        Operating System
-        </h1>
-
-        <Marquee pauseOnHover="true">
-          <div className="flex justify-center items-center gap-5">
-            {tools.map((item) => (
-              <div className="border-2 space-y-2 border-[#f6f6] rounded-full p-5 grid justify-items-center items-center">
-                <img src={item.icons} className="h-12 w-12" alt="" />
-
-                <p className="text-lg">{item.name}</p>
-
-                <p className="text-lg">{item.value}%</p>
-              </div>
-            ))}
-          </div>
-        </Marquee>
-      </div>
-
     </section>
   );
 };
