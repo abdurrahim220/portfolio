@@ -11,9 +11,7 @@ const Contact = () => {
             <h2 className="text-4xl font-bold leadi lg:text-5xl">
               Let's talk!
             </h2>
-            <div className="">
-              You can contact me through email
-            </div>
+            <div className="">You can contact me through email</div>
           </div>
           <Lottie animationData={image} />;
         </div>
@@ -49,11 +47,13 @@ const Contact = () => {
               className="w-full p-3 rounded bg-gray-200"
             ></textarea>
           </div>
+
           <button
-            type="submit"
-            className="w-full p-3 text-sm font-bold tracking-tighter uppercase rounded dark:bg-violet-400 dark:text-gray-900"
+            class="px-6 py-2.5 text-black rounded-lg bg-green-300 hover:bg-green-400 inline-flex items-center"
+            type="button"
           >
-            Send Message
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-black"></svg>
+            Send Email
           </button>
         </form>
       </div>

@@ -24,8 +24,7 @@ import Windows from "../../assets/icons/windows-applications-svgrepo-com.svg";
 import NextJs from "../../assets/icons/nextjs-svgrepo-com.svg";
 import Vite from "../../assets/icons/vitejs-svgrepo-com.svg";
 import ReactNative from "../../assets/icons/react-svgrepo-com.svg";
-// import NodeJs from "../../assets/icons";
-// import NodeJs from "../../assets/icons";
+
 
 const Skill = () => {
   const basicsData = [
@@ -73,7 +72,7 @@ const Skill = () => {
           <div className="flex justify-center items-center gap-5">
             {basicsData.map((item) => (
               <div className="border-2 space-y-2 border-[#f6f6] rounded-full p-5 grid justify-items-center items-center">
-                <img src={item.icons} className="h-12 w-12" alt="" />
+                <img src={item.icons} className="h-10 w-10" alt="" />
 
                 <p className="text-lg">{item.name}</p>
 
@@ -91,7 +90,7 @@ const Skill = () => {
           <div className="flex justify-center items-center gap-5">
             {framework.map((item) => (
               <div className="border-2 space-y-2 border-[#f6f6] rounded-full p-5 grid justify-items-center items-center">
-                <img src={item.icons} className="h-12 w-12" alt="" />
+                <img src={item.icons} className="h-10 w-10" alt="" />
 
                 <p className="text-lg">{item.name}</p>
 
@@ -109,7 +108,7 @@ const Skill = () => {
           <div className="flex justify-center items-center gap-5">
             {tools.map((item) => (
               <div className="border-2 space-y-2 border-[#f6f6] rounded-full p-5 grid justify-items-center items-center">
-                <img src={item.icons} className="h-12 w-12" alt="" />
+                <img src={item.icons} className="h-10 w-10" alt="" />
 
                 <p className="text-lg">{item.name}</p>
 

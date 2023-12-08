@@ -24,14 +24,15 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold loading-[0.8]  mb-6"
-            >Md ABDUR <span>RAHIM</span>
+            >
+              Md ABDUR <span>RAHIM</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[30px] lg:text-[40px] uppercase font-secondary font-semibold loading-[1]"
+              className="mb-6 text-[30px] lg:text-[40px] uppercase font-semibold"
             >
               <span className=" mr-4">Junior</span>
               <TypeAnimation
@@ -60,10 +61,22 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Hire Me</button>
+              <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                <span class="relative text-white">Hire Me</span>
+              </span>
+
               <Link to="" className="text-gradient btn-link">
-                My Resume
+               
               </Link>
+              <a
+                href="#_"
+                class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
+              >
+                <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                My Resume
+                </span>
+              </a>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.5)}
@@ -77,21 +90,21 @@ const Banner = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <FaGithub />
+                <FaGithub  size={35} color="black"/>
               </a>
               <a
                 href="https://www.linkedin.com/in/md-abdur-rahim-35609723a/"
                 rel="noreferrer"
                 target="_blank"
               >
-                <FaLinkedin />
+                <FaLinkedin size={35} color="blue"/>
               </a>
               <a
                 href="https://www.facebook.com/royal.wd"
                 rel="noreferrer"
                 target="_blank"
               >
-                <FaFacebook />
+                <FaFacebook size={35} color="skyBlue"/>
               </a>
             </motion.div>
           </div>
@@ -102,7 +115,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-          <Lottie animationData={image}/>;
+            <Lottie animationData={image} />;
           </motion.div>
         </div>
       </div>
