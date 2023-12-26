@@ -15,6 +15,7 @@ const Projects = () => {
   // console.log(fullStackProjects)
 
   const frontendProjects = filterProjectsByCategory("frontend");
+  const basicProjects = filterProjectsByCategory("basic");
 
   return (
     <div id="projects" className="my-16">
@@ -39,6 +40,7 @@ const Projects = () => {
               />
             ))}
           </TabPanel>
+
           <TabPanel className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center ">
             {frontendProjects.map((project) => (
               <CardImage
@@ -52,10 +54,17 @@ const Projects = () => {
           <TabPanel>
             <CardImage image={image} />
           </TabPanel>
-          <TabPanel className="flex gap-2">
-            <CardImage image={image} />
-            <CardImage image={image} />
+        
+          <TabPanel className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center ">
+            {basicProjects.map((project) => (
+              <CardImage
+                key={project.id}
+                id={project.id}
+                image={project.image}
+              />
+            ))}
           </TabPanel>
+
         </Tabs>
       </div>
     </div>
