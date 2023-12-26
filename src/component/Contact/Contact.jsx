@@ -15,47 +15,52 @@ const Contact = () => {
           </div>
           <Lottie animationData={image} />;
         </div>
-        <form novalidate="" className="space-y-6">
-          <div>
-            <label for="name" className="text-sm">
-              Full name
-            </label>
-            <input
-              id="name"
-              type="text"
-              placeholder=""
-              className="w-full p-3 rounded bg-gray-200"
-            />
-          </div>
-          <div>
-            <label for="email" className="text-sm">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              className="w-full p-3 rounded bg-gray-200"
-            />
-          </div>
-          <div>
-            <label for="message" className="text-sm">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows="3"
-              className="w-full p-3 rounded bg-gray-200"
-            ></textarea>
-          </div>
+        <div className="border-2 rounded-md p-5 border-[#1669d6]">
+          <form novalidate="" className="space-y-6">
+            <div>
+              <label for="name" className="text-sm">
+                Full name
+              </label>
+              <input
+                id="name"
+                type="text"
+                placeholder=""
+                className="w-full p-3 rounded "
+              />
+            </div>
+            <div>
+              <label for="email" className="text-sm">
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                className="w-full p-3 rounded "
+              />
+            </div>
+            <div>
+              <label for="message" className="text-sm">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows="3"
+                className="w-full p-3 rounded "
+              ></textarea>
+            </div>
 
-          <button
-            class="px-6 py-2.5 text-black rounded-lg bg-green-300 hover:bg-green-400 inline-flex items-center"
-            type="button"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-black"></svg>
-            Send Email
-          </button>
-        </form>
+            <button
+              className="px-6 py-2.5 text-black rounded-lg bg-green-300 hover:bg-green-400 inline-flex items-center"
+              type="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 mr-2 text-black"
+              ></svg>
+              Send Email
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

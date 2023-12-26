@@ -11,22 +11,22 @@ const Nav = () => {
     <div className='container mx-auto'>
       <div className='w-full items-center bg-black h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between text-2xl text-white'>
 
-        <Link to='home' offset={-200} activeClass='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
+        <Link to='home' offset={-200} activeclassName='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
           <BiHomeAlt />
         </Link>
-        <Link to='about' activeClass='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
+        <Link to='about' activeclassName='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
           <MdCastForEducation />
         </Link>
 
-        <Link to='skills' activeClass='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
+        <Link to='skills' activeclassName='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
           <FaDev />
         </Link>
 
-        <Link to='projects' activeClass='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
+        <Link to='projects' activeclassName='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
           <BsClipboardData />
         </Link>
        
-        <Link to='contact' activeClass='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
+        <Link to='contact' activeclassName='active' smooth={true} spy={true} className='cursor-pointer w-[60px] flex items-center justify-center'>
           <BsChatSquare/>
         </Link>
 

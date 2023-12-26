@@ -22,9 +22,9 @@ const About = () => {
                   <h3 className="text-xl font-semibold tracking-tighter">
                     Computer Science and Engineering
                   </h3>
-                  <time className="text-xs tracking-tighter uppercase dark:text-gray-400">
+                  <timoe className="text-xs tracking-tighter uppercase dark:text-gray-400">
                     2021-2025
-                  </time>
+                  </timoe>
                   <p className="mt-3">
                     As a Bachelor of Science in Computer Science and Engineering
                     (CSE) student at Southeast University, I have gain a solid

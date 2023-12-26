@@ -10,6 +10,7 @@ import Banner from './component/Banner/Banner';
 import Skill from './component/Skills/Skill';
 import Skills from './component/Skills/Skills';
 
+
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <Skill/>
       <Projects/>
       <Contact />
+   
     </>
   );
 }
