@@ -23,11 +23,10 @@ const Projects = () => {
         <Tabs className="space-y-4">
           <TabList className="">
             <div className="flex flex-wrap justify-center items-center gap-3">
-              {" "}
-              <Tab className="px-5 py-2 rounded-lg bg-red-300">Full Stack</Tab>
-              <Tab className="px-5 py-2 rounded-lg bg-red-300">FrontEnd</Tab>
-              <Tab className="px-5 py-2 rounded-lg bg-red-300">DOM</Tab>
-              <Tab className="px-5 py-2 rounded-lg bg-red-300">Basic</Tab>
+              <Tab className={`px-5 py-2 rounded-lg `}>Full Stack</Tab>
+              <Tab className={`px-5 py-2 rounded-lg `}>FrontEnd</Tab>
+              <Tab className={`px-5 py-2 rounded-lg `}>DOM</Tab>
+              <Tab className={`px-5 py-2 rounded-lg `}>Basic</Tab>
             </div>
           </TabList>
 
@@ -40,9 +39,16 @@ const Projects = () => {
               />
             ))}
           </TabPanel>
-          <TabPanel>
-            <CardImage image={image} />
+          <TabPanel className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center ">
+            {frontendProjects.map((project) => (
+              <CardImage
+                key={project.id}
+                id={project.id}
+                image={project.image}
+              />
+            ))}
           </TabPanel>
+
           <TabPanel>
             <CardImage image={image} />
           </TabPanel>
