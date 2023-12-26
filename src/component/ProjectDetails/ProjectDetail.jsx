@@ -8,8 +8,8 @@ const ProjectDetail = () => {
   // console.log(project)
 
   return (
-    <div className="container mx-auto py-10 h-screen">
-      <div className="md:flex justify-center gap-5">
+    <div className="container mx-auto py-10 h-auto px-2 md:px-0">
+      <div className="md:flex space-y-10 justify-center gap-5">
         <div>
           <img
             src={project.image}
