@@ -106,5 +106,21 @@ const data = [
     adminEmail: "",
     adminPassword: "",
   },
+  {
+    id: 8,
+    category: "fullStack",
+    projectName: "House Hunting",
+    liveLink: "https://gentle-sprinkles-7fc787.netlify.app/",
+    frontEndGithub: "https://github.com/abdurrahim220/houseRent_Client",
+    backEndGithub: "https://github.com/abdurrahim220/houseRent_Backend.git",
+    image: "https://i.ibb.co/HdCSH3k/screencapture-gentle-sprinkles-7fc787-netlify-app-2024-01-29-18-44-03-min.png",
+    "front-end":
+      " material ui, react-stripe-js,axios, firebase,moment ,react-dom, react-icons, react-router-dom, recharts, sass, sort-by, sweetalert2,react-hook,private-route,context-api",
+    "back-End":
+      "body-parser, cloudinary, cors, dotenv, express, jsonwebtoken, moment, mongoose, nodemon, stripe",
+    userDetails: "",
+    adminEmail: "admin@admin.com",
+    adminPassword: "123456",
+  },
 ];
 export default data;
